@@ -1,0 +1,28 @@
+template:
+  class: File
+  path: ../silva.v4.fasta
+
+filestomerge:
+  - {class: File, path: ./SRR531818_pampa.fasta}
+  - {class: File, path: ./SRR651839_anguil.fasta}
+
+group:
+  - pampa
+  - anguil
+
+end: 3080
+
+start: 13424
+
+trump: '.'
+
+diffs: 2
+
+template_1:
+  class: File
+  path: ./trainset16_022016.pds.fasta
+taxonomy:
+  class: File
+  path: ./trainset16_022016.pds.tax
+
+label: '0.03'

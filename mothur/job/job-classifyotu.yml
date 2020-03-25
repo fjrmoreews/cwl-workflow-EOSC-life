@@ -1,0 +1,21 @@
+candidate:
+  class: File
+  path: ./merge.unique.good.fasta
+template:
+  class: File
+  path: ../silva.v4.fasta
+
+(venv) root@cwldocker:~/alignment/tools/mothur_tools/pampa_anguil# cat job-classifyotu.yml
+list:
+        class: File
+        path: ./merge.unique.good.good.filter.precluster.an.list
+
+count:
+        class: File
+        path: ./merge.unique.good.good.filter.precluster.count_table
+
+taxonomy:
+        class: File
+        path: ./merge.unique.good.good.filter.precluster.pds.wang.taxonomy
+
+label: '0.03'

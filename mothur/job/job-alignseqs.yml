@@ -1,0 +1,6 @@
+candidate:
+  class: File
+  path: ./merge.unique.good.fasta
+template:
+  class: File
+  path: ../silva.v4.fasta

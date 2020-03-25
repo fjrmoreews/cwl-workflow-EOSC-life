@@ -1,0 +1,13 @@
+fasta:
+        class: File
+        path: ./merge.unique.good.good.filter.precluster.fasta
+template:
+        class: File
+        path: ./trainset16_022016.pds.fasta
+taxonomy:
+        class: File
+        path: ./trainset16_022016.pds.tax
+
+count:
+        class: File
+        path: ./merge.unique.good.good.filter.precluster.count_table
