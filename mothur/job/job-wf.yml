@@ -1,28 +1,29 @@
 template:
   class: File
-  path: ../silva.v4.fasta
+  path: ../data/silva.v4.fasta
 
 filestomerge:
-  - {class: File, path: ./SRR531818_pampa.fasta}
-  - {class: File, path: ./SRR651839_anguil.fasta}
+  - {class: File, path: ../data/SRR531818_pampa.fasta}
+  - {class: File, path: ../data/SRR651839_anguil.fasta}
 
 group:
   - pampa
   - anguil
 
-end: 3080
+template_1:
+  class: File
+  path: ../data/trainset16_022016.pds.fasta
+taxonomy:
+  class: File
+  path: ../data/trainset16_022016.pds.tax
 
-start: 13424
-
+minlength: 225
+maxlength: 275
+maxhomop: 8
+maxambig: 0
 trump: '.'
 
 diffs: 2
-
-template_1:
-  class: File
-  path: ./trainset16_022016.pds.fasta
-taxonomy:
-  class: File
-  path: ./trainset16_022016.pds.tax
-
 label: '0.03'
+cutoffClusterSplit: 0.15
+methodClusterSplit: "average"
